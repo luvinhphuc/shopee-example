@@ -18,6 +18,8 @@
 
 .header__navbar-item {
     padding: 4px;
+    min-height: 26px;
+    position: relative;
 }
 
 .header__navbar-item--separate::after {
@@ -51,13 +53,43 @@
     display: block;
 }
 
-.header__navbar-item:not(.header__navbar-item--no-hover):hover{
+.header__navbar-item:not(.header__navbar-item--no-hover):hover
+.header__navbar-item--link {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.header__navbar-item--qr-text:hover {
     opacity: 0.7;
     cursor: pointer;
 }
 
 
-.header__icon{
+.header__nav-icon{
     font-size: 1.45rem;
     color: var(--white-color);
+}
+
+/* QR code */
+.header__qr {
+ background-color: var(--white-color);
+ width: 186px;
+ position: absolute;
+ left: 0;
+ top: 100%;
+ padding: 8px;
+ border-radius: 3px;
+ pointer-events: none;
+}
+
+.header__qr-img {
+    width: 100%;
+}
+
+.header__qr-apps{
+    display: flex;
+}
+
+.header__qr-platform {
+    width: 100%;
 }

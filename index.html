@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-7.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -21,15 +21,29 @@
                         <li class="header__navbar-item header__navbar-item--separate">
                             <a href="#" class="header__navbar-item--link">Trở thành Người bán Shopee</a>
                         </li>
-                        <li class="header__navbar-item header__navbar-item--separate">
-                            <a href="#" class="header__navbar-item--link">Tải ứng dụng</a>
+                        <li class="header__navbar-item header__navbar-item--separate header__navbar-item--no-hover">
+                            <a href="#" class="header__navbar-item--link header__navbar-item--qr-text">
+                                Tải ứng dụng
+                            </a>
+                            <div class="header__qr">
+                                <img class="header__qr-img" src="assets/img/qr.png" alt="QR Code">
+                                <div class="header__qr-apps">
+                                    <a class="header__qr-app-link" href="#">
+                                        <img src="assets/img/googleplay.png" alt="" class="header__qr-platform">
+                                    </a>
+                                    <a class="header__qr-app-link" href="#">
+                                        <img src="assets/img/appstore.png" alt="" class="header__qr-platform">
+                                    </a>
+                                </div>
+                            </div>
                         </li>
-                        <li class="header__navbar-item header__navbar-item--separate header__navbar-item--no-hover"> Kết nối
+                        <li class="header__navbar-item header__navbar-item--separate header__navbar-item--no-hover">
+                            <span>Kết nối</span>
                             <a href="#" class="header__navbar-item--link">
-                                <i class="header__icon fa-brands fa-facebook"></i>
+                                <i class="header__nav-icon fa-brands fa-facebook"></i>
                             </a>
                             <a href="#" class="header__navbar-item--link">
-                                <i class="header__icon fa-brands fa-instagram"></i>
+                                <i class="header__nav-icon fa-brands fa-instagram"></i>
                             </a>
                         </li>
                     </ul>
@@ -37,19 +51,19 @@
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item">
                             <a href="#" class="header__navbar-item--link">
-                                <i class="header__icon fa-regular fa-bell"></i>
+                                <i class="header__nav-icon fa-regular fa-bell"></i>
                                 Thông Báo
                             </a>
                         </li>
                         <li class="header__navbar-item">
                             <a href="#" class="header__navbar-item--link"> 
-                                <i class="header__icon fa-regular fa-circle-question"></i>
+                                <i class="header__nav-icon fa-regular fa-circle-question"></i>
                                 Hỗ Trợ
                             </a>
                         </li>
                         <li class="header__navbar-item header__navbar-item--language">
                             <span>
-                                <i class="header__icon fa-solid fa-globe"></i>
+                                <i class="header__nav-icon fa-solid fa-globe"></i>
                                 Tiếng Việt
                                 <i class="fa-solid fa-angle-down"></i>
                             </span>
