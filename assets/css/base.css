@@ -4,10 +4,10 @@
     --text-colore: #333;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Roboto';
     src: url(../font/Roboto.ttf);
-}
+} */
 * {
     box-sizing: inherit;
 }
